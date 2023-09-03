@@ -4,7 +4,7 @@ services:
     build: ./.docker
     container_name: project_web
     volumes:
-      - ~/Docker/DevWeb/:/var/www/html
+      - ~/Docker/DevWeb:/var/www/html
       - ~/Docker/DevWeb/.docker/virtualhost.conf:/etc/apache2/sites-available/000-default.conf
       - ~/Docker/DevWeb/.docker/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
     ports:
